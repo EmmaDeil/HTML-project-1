@@ -1,0 +1,170 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > *:not(footer) {
+    flex: 1;
+}
+
+nav {
+    background-color: lightgray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    background-color: white;
+    color: #000;
+    border: 1px solid #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#about,
+#contact,
+#resume,
+#home,
+#work {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    width: 7%;
+    height: 10%;
+    line-height: 20px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#work:hover {
+    background-color: #e7f1ff;
+}
+
+#home:hover {
+    background-color: #e7f1ff;
+}
+
+#contact:hover {
+    background-color: #e7f1ff;
+}
+
+#about:hover {
+    background-color: #e7f1ff;
+}
+
+#resume:hover {
+    background-color: #e7f1ff;
+}
+
+.aboutform {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+#workheader{
+    
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resumeheader {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Changed back to 100% */
+    max-width: 400px;
+}
+
+.file-input:hover {
+    background-color: #e6e6e6;
+    border-color: #888;
+}
+
+.file-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

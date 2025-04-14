@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StageX</title>
+    <link rel="stylesheet" href="/Newproject/main.css"> 
+    <link rel="shortcut icon" href="/Newproject/users-alt.png" type="image/x-icon">
+    <meta name="description" content="Resume of Go my Code, an EdTech startup.">
+    <meta name="author" content="Go my Code">
+    <meta name="keywords" content="Resume, Go my Code, EdTech, Web Developer">
+    <meta name="robots" content="index, follow">
+</head>
+
+<header>
+     <nav>
+<a href="/Newproject/Index.html" id="home">Home</a>
+<a href="/Newproject/Work.html" id="work">Work</a>
+<a href="/Newproject/about.html" id="about">About</a>
+<a href="/Newproject/contact.html" id="contact">Contact</a>
+<a href="/Newproject/resume.html" id="resume">Resume</a>  
+</nav>
+</header>
+<br><br>
+
+<body>
+   <form action="">
+       <label for="name">
+        <h2 id="workheader">Employment Application</h2>
+       </label>
+       <h4>Personal information</h4>
+       <label for="name">Full Name: </label>
+       <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+       <input type="text" name="middlename" id="middlename" placeholder="Enter your middlename" required>
+       <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required><br><br>
+
+       <p>Address Information</p>
+             <input type="text" name="address" id="address" placeholder="Enter your address" required><br>Street Address <p></p>
+       
+       <input type="text" name="city" id="city" placeholder="Enter your city" required><br>City <p></p>
+
+       <p>State:</p>
+       <select name="state" id="state" required>
+           <option value="">Select your state</option>
+           <option value="Abia">Abia</option>
+           <option value="Adamawa">Adamawa</option>
+           <option value="Akwa Ibom">Akwa Ibom</option>
+           <option value="Anambra">Anambra</option>
+           <option value="Bauchi">Bauchi</option>
+           <option value="Bayelsa">Bayelsa</option>
+           <option value="Benue">Benue</option>
+           <option value="Borno">Borno</option>
+           <option value="Cross River">Cross River</option>
+           <option value="Delta">Delta</option>
+           <option value="Ebonyi">Ebonyi</option>
+           <option value="Edo">Edo</option>
+           <option value="Ekiti">Ekiti</option>
+           <option value="Enugu">Enugu</option>
+           <option value="Gombe">Gombe</option>
+           <option value="Imo">Imo</option>
+           <option value="Jigawa">Jigawa</option>
+           <option value="Kaduna">Kaduna</option>
+           <option value="Kano">Kano</option>
+           <option value="Katsina">Katsina</option>
+           <option value="Kebbi">Kebbi</option>
+           <option value="Kogi">Kogi</option>
+           <option value="Kwara">Kwara</option>
+           <option value="Lagos">Lagos</option>
+           <option value="Nasarawa">Nasarawa</option>
+           <option value="Niger">Niger</option>
+           <option value="Ogun">Ogun</option>
+           <option value="Ondo">Ondo</option>
+           <option value="Osun">Osun</option>
+           <option value="Oyo">Oyo</option>
+           <option value="Plateau">Plateau</option>
+           <option value="Rivers">Rivers</option>
+           <option value="Sokoto">Sokoto</option>
+           <option value="Taraba">Taraba</option>
+           <option value="Yobe">Yobe</option>
+           <option value="Zamfara">Zamfara</option>
+           <option value="FCT">Federal Capital Territory (FCT)</option>
+       </select>
+       <br><br>
+
+       <p>Local Government:</p>
+       <input type="text" name="local-government" id="local-government" placeholder="Enter your local government area" required>
+       <br><br>
+
+       <p>Country:</p>
+       <select name="country" id="country" required>
+           <option value="Nigeria">Nigeria</option>
+       </select>
+       <br><br>
+       
+       <p>Phone Number</p>
+       <input type="text" name="phonenumber" id="phonenumber" placeholder="Enter your phone number" required><br>
+    
+       <br> 
+       <p>E-mail:</p>
+       <input type="email" name="email" id="email" placeholder="ex: myname@example.com" required><br>
+
+       <label for="birthdate">Birth Date:</label><br>
+       <select name="month" id="month" required>
+           <option value="">Month</option>
+           <option value="1">January</option>
+           <option value="2">February</option>
+           <option value="3">March</option>
+           <option value="4">April</option>
+           <option value="5">May</option>
+           <option value="6">June</option>
+           <option value="7">July</option>
+           <option value="8">August</option>
+           <option value="9">September</option>
+           <option value="10">October</option>
+           <option value="11">November</option>
+           <option value="12">December</option>
+       </select>
+
+       <select name="day" id="day" required>
+           <option value="">Day</option>
+           <!-- Generate options for days -->
+           <script>
+               for (let i = 1; i <= 31; i++) {
+                   document.write(`<option value="${i}">${i}</option>`);
+               }
+           </script>
+       </select>
+
+       <select name="year" id="year" required>
+           <option value="">Year</option>
+           <!-- Generate options for years -->
+           <script>
+               const currentYear = new Date().getFullYear();
+               for (let i = currentYear; i >= 1900; i--) {
+                   document.write(`<option value="${i}">${i}</option>`);
+               }
+           </script>
+       </select>
+       <br>
+       
+       <label for="Roles">Roles:</label><br>
+       <select name="roles" id="roles">
+           <option value="">Select a role</option>
+           <option value="developer">Developer</option>
+           <option value="designer">Designer</option>
+           <option value="manager">Manager</option>
+           <option value="tester">Tester</option>
+           <option value="analyst">Analyst</option> 
+           <option value="developer">Developer</option>
+           <option value="designer">Designer</option> 
+        
+           <option value="manager">Manager</option>
+           <option value="tester">Tester</option> 
+           <option value="analyst">Analyst</option> 
+        </select>
+       <label for="message">Why should we hire you? </label><br>
+       <textarea name="message" id="message" placeholder="Your message" required></textarea><br>
+       
+       <button type="submit">Submit</button>
+   </form>
+
+
+    <section>
+        <h2>Additional Information</h2>
+        <p>Please fill out the form above to get in touch with us.</p>
+    </section>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; 2025 SpageX. All rights reserved.</p>
+</footer>
+</html>
